@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eddy J. Tang | Computing Sciences</title>
+	<link rel="stylesheet" href="projects.css">
+</head>
+<body onload='displayInfo("ashtoash")'>
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html">Home</a>
+	  <a href="projects.html">Projects</a>
+	</div>
+
+	<div id="content">
+		<div class="topName">
+			<div class="container" onclick="openNav()">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+			<h1>Eddy J. Tang</h1>
+		</div>
+
+		<div class="topTitle">
+			<h1>Projects</h1>
+		</div>
+
+	
+	  <div class="column menu">
+	    <ul>
+	      <li onmousedown='displayInfo("ashtoash")'>Ashes To Ashes (School)</li>
+	      <li onmousedown='displayInfo("ashtoashGM")'>Ashes To Ashes (Recreation)</li>
+	      <li onmousedown='displayInfo("sizeBook")'>SizeBook (School)</li>
+	    </ul>
+	  </div>
+
+	<div class="verticalLine">
+	</div>
+
+	 <div class="column content">
+	  	<div id="ashtoash">
+	  		<h1>Ashes To Ashes By Bouyant Buffalo</h1>
+	  		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vjtKV63Vu84" frameborder="0" allowfullscreen></iframe>
+	  		<p>For one of my classes at the University of Alberta, we were to design and fully implement a game using Microsofts Project Spark Engine (no longer available). The game was developed in a span of four months with a team of 6 members, and recieved Game of The Year Award at Edmontons Game Discovery Exhibition. Unfortunately Project Spark is no longer available, and microsoft has shut down all of their servers, but my team is currently looking into ways to retrieve a working copy to allow people to access and play our game. Please check back if you are interested.</p>
+	  	</div>
+
+	  	<div id="ashtoashGM">
+	  		<h1>Ashes To Ashes A re-imagined game By Bouyant Buffalo</h1>
+	  		<p>Feeling up for making another game together, a some members of our group from our original game Ashes to Ashes came back together for a small game jam. With 3 days, we crafted a prototype of our game and its mechanics in YoYoGames Game Maker. Although it is not a lot, it was a proof of concept that we were able to get the engine working since it was our first time working with it.</p>
+	  	</div>
+
+	  	<div id="sizeBook">
+	  		<h1>SizeBook Application (Android)</h1>
+	  		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SgESAoLuuPM" frameborder="0" allowfullscreen></iframe>
+	  		<p>For one of our classes at the University of Alberta, we were to build a simple application that would store sizes of people a user would want to input. The user would have functionality to do things such creating new entries, edit old entries, as well as view entries in full detail if they tap on the entry. The application was build for Android through Android Studios.</p>
+	  	</div>
+
+	 </div>
+	  
+	</div>
+
+<script>
+	function displayInfo(selection) {
+		var selectionsList = ["ashtoash","ashtoashGM","sizeBook"];
+		document.getElementById(selection).style.display = 'visible';
+		document.getElementById(selection).style.display = 'block';
+		for (var i = 0; i < selectionsList.length; i ++) {
+			if (selectionsList[i] !== selection) {
+				document.getElementById(selectionsList[i]).style.display = 'none';
+			}
+		}
+	}
+
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "30%";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	}
+
+</script>
+
+</body>
+</html>

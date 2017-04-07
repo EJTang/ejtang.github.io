@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eddy J. Tang | Computing Sciences</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container" onclick="openNav()">
+	  <div class="bar1"></div>
+	  <div class="bar2"></div>
+	  <div class="bar3"></div>
+	</div>
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">About</a>
+	  <a href="projects.html">Projects</a>
+	</div>
+
+	<div class="fullscreenDiv">
+		<div class="profile">
+			<h1>Eddy J. Tang</h1>
+			<h2>Software Developer</h2>
+		</div>
+
+		<div id="scrollingIntro" class="introduction">
+			<p>Hello, and thank you for coming to my website! I am a third year student at the University of Alberta in Canada, pursuing a Specialization in Computing Sciences undergraduate degree.</p>
+
+			<p>Are you looking for an intern or someone to help you with a project? Take a look at a few of my School Projects, and Side projects to see what I have made. Then, maybe learn a little about me and consider hiring me.</p>
+		</div>
+	</div>
+
+<script>
+	function myFunction(x) {
+	    x.classList.toggle("change");
+	}
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "17%";
+	    document.getElementById("scrollingIntro").style.marginLeft = "17%";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	    document.getElementById("scrollingIntro").style.marginLeft = "0";
+	}
+</script>
+</body>
+</html>

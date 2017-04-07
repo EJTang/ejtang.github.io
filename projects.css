@@ -1,0 +1,172 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+/* colour pallet
+*	#c9c9c9 - darker grey
+*	#e3e3e3 - grey
+*	#9ad3de - teal
+*	#89bdd3 - blue
+*/
+
+@font-face {
+    font-family: futura;
+    src: url(Futura.ttc);
+}
+
+@font-face{
+    font-family: avinr;
+    src: url(Avenir Next Condensed.tcc);
+}
+
+/*
+ *This is for the menu bar
+*/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.verticalLine {
+	border-left:medium #CC0000 solid;
+	position:absolute; 
+	top: 0px;
+	left: 30%;
+	height: 30%;
+}
+
+.topName {
+	position: absolute;
+	width: 27%;
+	height: auto;
+	left: 0px;
+	top: 0%;
+	font-family: avenir;
+	text-align: right;
+	padding-right: 3%;
+	background-color: #e3e3e3;
+}
+
+.topTitle {
+	position: absolute;
+	width: 67%;
+	height: auto;
+	right: 0px;
+	top: 0%;
+	font-family: avenir;
+	text-align: left;
+	padding-left: 3%;
+	background-color: #9ad3de;
+}
+
+.column {
+	position: absolute;
+	top: 10%;
+    float: left;
+    padding-top: 1%;
+}
+
+.menu {
+	padding-left: 3%;
+    width: 20%;
+}
+.content {
+	right: 0px;
+    width: 70%;
+    font-family: avenir;
+    padding-left: 3%;
+    text-align: center;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+/* The side navigation menu */
+/* Taken off of https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    text-align: center;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#scrollingIntro {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+</style>
+</head>
+</html>
