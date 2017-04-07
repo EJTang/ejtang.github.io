@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eddy J. Tang | Computing Sciences</title>
+	<link rel="stylesheet" href="projects.css">
+	<meta charset="UTF-8">
+</head>
+<body onload='displayInfo("ashtoash")'>
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html">Home</a>
+	  <a href="projects.html">Projects</a>
+	</div>
+
+	<div id="content">
+		<div class="topName">
+			<div class="container" onclick="openNav()">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+			<h1>Eddy J. Tang</h1>
+		</div>
+
+		<div class="topTitle">
+			<h1>Projects</h1>
+		</div>
+
+	
+	  <div class="column menu">
+	    <ul>
+	      <li onmousedown='displayInfo("ashtoash")'>Ashes To Ashes (学校)</li>
+	      <li onmousedown='displayInfo("ashtoashGM")'>Ashes To Ashes ()</li>
+	      <li onmousedown='displayInfo("sizeBook")'>SizeBook (学校)</li>
+	    </ul>
+	  </div>
+
+	<div class="verticalLine">
+	</div>
+
+	 <div class="column content">
+	  	<div id="ashtoash">
+	  		<h1>Ashes To Ashes By Bouyant Buffalo</h1>
+	  		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vjtKV63Vu84" frameborder="0" allowfullscreen></iframe>
+	  		<p>アルバータ大学でケームを作るとゲームディザインの授業が取りました。その授業で、MicrosoftのProject Sparkというエンジンでゲームを作っておりました。このゲームは四ヶ月間に六人で、頑張って作りました。それに、エドモントンのGame Discovery Exibitionでゲーム・オブ・ザ・イヤーを取りました。</p>
+	  	</div>
+
+	  	<div id="ashtoashGM">
+	  		<h1>Ashes To Ashes（remake prototype) By Bouyant Buffalo</h1>
+	  		<img src="hook_shot.png" alt="Hook Shot" width="560" height="315">
+	  		<p>Wanting to make another game together, most members from Bouyant Buffalo decided to get back together for a short game jam. With 3 days, we crafted a prototype of our game and its mechanics with <a href="http://www.yoyogames.com/gamemaker">YoYoGames GameMaker Studio</a>. Although it is not a lot, it was a proof of concept that we were able to get the engine working since it was our first time working with it.</p>
+
+	  		<a href="ashtoash_lvl1.exe" download>Prototype Level 1</a>
+	  		<a href="ashtoash_lvl2.exe" download>Prototype Level 2</a>
+	  	</div>
+
+	  	<div id="sizeBook">
+	  		<h1>SizeBook Application (Android)</h1>
+	  		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SgESAoLuuPM" frameborder="0" allowfullscreen></iframe>
+	  		<p>For one of our classes at the University of Alberta, we were to build a simple application that would store sizes of people a user would want to input. The user would have functionality to do things such creating new entries, edit old entries, as well as view entries in full detail if they tap on the entry. The application was build for Android through Android Studios.</p>
+
+	  		<a href="https://github.com/EJTang/ejtang-SizeBook">Link to my github repository for this project</a>
+	  	</div>
+
+	 </div>
+	  
+	</div>
+
+<script>
+	function displayInfo(selection) {
+		var selectionsList = ["ashtoash","ashtoashGM","sizeBook"];
+		document.getElementById(selection).style.display = 'visible';
+		document.getElementById(selection).style.display = 'block';
+		for (var i = 0; i < selectionsList.length; i ++) {
+			if (selectionsList[i] !== selection) {
+				document.getElementById(selectionsList[i]).style.display = 'none';
+			}
+		}
+	}
+
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "30%";
+	}
+
+	/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	}
+
+</script>
+
+</body>
+</html>

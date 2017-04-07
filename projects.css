@@ -22,6 +22,10 @@
     src: url(Avenir Next Condensed.tcc);
 }
 
+p.content {
+    text-transform: translate(-40%);
+}
+
 /*
  *This is for the menu bar
 */
